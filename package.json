@@ -1,0 +1,13 @@
+{
+  "name": "presence",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @presence/web dev",
+    "build": "pnpm --filter @presence/web build",
+    "test": "pnpm -r --filter @presence/scoring --filter @presence/web test",
+    "db:migrate": "pnpm --filter @presence/web exec prisma migrate dev",
+    "db:generate": "pnpm --filter @presence/web exec prisma generate"
+  },
+  "packageManager": "pnpm@9.7.0"
+}

@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata={title:"Shared photo pick"};
+export default function Share(){return <div className="page-shell"><div className="mx-auto max-w-md card p-8 text-center"><p className="eyebrow">My AI photo pick</p><h1 className="mt-4 text-4xl font-bold text-accent">#1 Photo B</h1><div className="mt-6 text-left text-muted space-y-2"><p>• Sharper image</p><p>• Better eye contact</p><p>• Cleaner framing</p></div><p className="mt-8 text-xs text-muted">Analyzed with PRESENCE</p><Link href="/compare" className="btn-primary mt-5">Try it on your photos</Link></div></div>}

@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata={title:"Purchase complete"};
+export default function Success(){return <div className="page-shell text-center"><p className="eyebrow">Payment complete</p><h1 className="mt-4 text-4xl md:text-6xl font-bold">You&apos;re unlocked.</h1><p className="mx-auto mt-4 max-w-xl text-lg text-muted">Your purchase was successful. Continue to PRESENCE and use the feature you just unlocked.</p><div className="mt-7 flex justify-center gap-3"><Link href="/makeover" className="btn-primary">Continue to Makeover</Link><Link href="/billing" className="btn-ghost">View billing</Link></div></div>}

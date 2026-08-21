@@ -1,0 +1,4 @@
+import Link from "next/link";
+export const metadata={title:"Legal & Privacy"};
+const docs=[["Privacy Policy","privacy"],["Terms of Service","terms"],["Face Processing Notice","biometric"],["Cookie Policy","cookies"],["Data Retention","retention"],["Acceptable Use","acceptable-use"]];
+export default function LegalHub(){return <div className="page-shell"><div className="page-head"><p className="eyebrow">Legal & privacy</p><h1 className="mt-3 text-4xl md:text-6xl font-bold">Your face isn&apos;t our product.</h1><p className="mt-4 text-lg text-muted">Plain-language policies for how PRESENCE handles photos, face processing, accounts, payments, and acceptable use.</p></div><div className="section-grid cols-2">{docs.map(([title,slug])=><div key={slug} className="card p-6"><h2 className="text-xl font-semibold">{title}</h2><Link href={`/legal/${slug}`} className="mt-5 inline-block text-accent">Read policy →</Link></div>)}</div></div>}
