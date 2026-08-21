@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata={title:"Billing"};
+export default function Billing(){return <div className="page-shell"><div className="page-head"><p className="eyebrow">Billing</p><h1 className="mt-3 text-4xl font-bold">Plans, purchases & receipts.</h1><p className="mt-3 text-muted">Manage subscription status and review one-time PRESENCE purchases.</p></div><div className="card mt-8 max-w-2xl p-6"><h2 className="text-xl font-semibold">Current plan</h2><p className="mt-2 text-muted">Free · production billing data will appear here after Stripe is connected.</p><div className="mt-5 flex gap-3"><Link href="/pricing" className="btn-primary">View plans</Link><Link href="/account" className="btn-ghost">Back to account</Link></div></div></div>}
